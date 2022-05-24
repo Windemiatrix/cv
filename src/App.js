@@ -57,16 +57,49 @@ function App() {
                                 projectsTitle: "Projects in Dodo Engineering",
                                 projectsContent: [
                                     {
-                                        title: "Something",
-                                        description: "",
+                                        title: "Securing connections to development and production environments",
+                                        description: "Searching for decision that will allow working with high security level with Azure and Yandex clouds",
                                         data: [
-                                            "",
-                                            "",
-                                            "",
+                                            "Compared prices and functionality of different decisions that provides Yandex and Azure.",
+                                            "Created PoC for each of them.",
+                                            "Prepared RFC after testing.",
+                                            "Implemented selected decision to infrastructure.",
                                         ],
-                                        techStack: "",
-                                    }
-                                ]
+                                        techStack: "Terraform",
+                                    },
+                                    {
+                                        title: "SSL certificates monitoring",
+                                        description: "Small project for monitoring expiration date of each certificates created by Gogetssl",
+                                        data: [
+                                            "Wrote small bash script that went to API anf prepared metrics for prometheus",
+                                            "Prepared and launched pod with that.",
+                                            "Implemented metrics to prometheus",
+                                        ],
+                                        techStack: "Bash, Docker, Kubernetes, Prometheus",
+                                    },
+                                    {
+                                        title: "Layer 4 / layer 7 security",
+                                        description: "Seeking for decision that helps to secure infrastructure from DDoS and bots attacks",
+                                        data: [
+                                            "Compared pricing, functionality and security level of decisions: Akamai, Cloudflare, Variti.",
+                                            "Prepared configuration as IaC, switched peace of production traffic to each decision one by one for some testing period.",
+                                            "Prepared RFC after testing.",
+                                            "Implemented selected decision to business products, that were needed that.",
+                                        ],
+                                        techStack: "Terraform",
+                                    },
+                                    {
+                                        title: "Migration from China Azure to Europe Azure",
+                                        description: "There was a copy of infrastructure for a small peace of business in China",
+                                        data: [
+                                            "Researched decisions that could be implemented for traffic between Europe and China.",
+                                            "Transferred data of MySQL.",
+                                            "Prepared infrastructure in Kubernetes.",
+                                            "Transferred traffic from China Azure to Europe Azure.",
+                                        ],
+                                        techStack: "Terraform, Bash, MySQL",
+                                    },
+                                ],
                             },
                             {
                                 company: "ORES LLC, Vladimir, Russia – DevOps Engineer",
