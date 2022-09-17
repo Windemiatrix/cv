@@ -29,7 +29,7 @@ jobs:
         with:
           RSYNC_OPTIONS: -avzr --delete --force
           RSYNC_TARGET: ${{ secrets.SSH_PATH }}
-          RSYNC_SOURCE: build/*
+          RSYNC_SOURCE: build
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
           SSH_USERNAME: ${{secrets.SSH_USER}}
