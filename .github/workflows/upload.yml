@@ -28,7 +28,7 @@ jobs:
         uses: plum-umd/github-actions-rsync@master
         with:
           RSYNC_OPTIONS: -rvzp
-          RSYNC_TARGET: ${{ secrets.SSH_PRIVATE_KEY }}
+          RSYNC_TARGET: ${{ secrets.SSH_PATH }}
           RSYNC_SOURCE: build
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
