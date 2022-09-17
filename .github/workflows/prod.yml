@@ -11,7 +11,7 @@ env:
   node-version: 18.x
 
 jobs:
-  upload:
+  deploy-prod:
     runs-on: ubuntu-latest
 
     steps:
