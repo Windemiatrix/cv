@@ -4,7 +4,7 @@ import BlockSummary from "./components/BlockSummary";
 import BlockExperience from "./components/BlockExperience";
 import BlockEducation from "./components/BlockEducation";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import BlockContacts from "./components/BlockContacts";
 import BlockSkills from "./components/BlockSkills";
 
@@ -14,8 +14,8 @@ function App() {
         <Container className="App">
             <Row>
                 <Col xs={8}>
-                    <Name content={"Roman Martsev"}/>
-                    <Profession content={"Site Reliability Engineer / DevOps Engineer"}/>
+                    <Name content={"Roman Martsev"} />
+                    <Profession content={"Site Reliability Engineer / DevOps Engineer"} />
                     <BlockSummary
                         title={"Summary"}
                         description={
@@ -56,6 +56,18 @@ function App() {
                                 description: "IT product for business: pizza, coffee, shawarma",
                                 projectsTitle: "Projects in Dodo Engineering",
                                 projectsContent: [
+                                    {
+                                        title: "Import SSL certificates from Azure to Variti",
+                                        description: "Exporting SSL certificate from Azure Key Vault and import to L4/L7 security service. That decision allows us don't matter about actuality of certificates on production endpoints",
+                                        data: [
+                                            "Wrote golang service that is doing all work.",
+                                            "Integrated service configuration with Azure Key Vault Secret.",
+                                            "Integrated logging with current logging system.",
+                                            "Configured environment with cronjob of this service.",
+                                            "Alerting was integrated automatically.",
+                                        ],
+                                        techStack: "Golang, GitHub Actions, Kubernetes, JsonNET, Azure",
+                                    },
                                     {
                                         title: "Securing connections to development and production environments",
                                         description: "Searching for decision that will allow working with high security level with Azure and Yandex clouds",
