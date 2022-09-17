@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to web
         uses: plum-umd/github-actions-rsync@master
         with:
-          RSYNC_OPTIONS: --delete
+          RSYNC_OPTIONS: -avzr --delete-before
           RSYNC_TARGET: ${{ secrets.SSH_PATH }}
           RSYNC_SOURCE: build
         env:
