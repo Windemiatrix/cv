@@ -8,7 +8,7 @@ on:
     branches: ["dev-*"]
 
 jobs:
-  upload:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
