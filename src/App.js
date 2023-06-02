@@ -36,12 +36,9 @@ function App() {
                     <BlockSkills
                         title={"Skills"}
                         content={[
-                            "Azure, Yandex Cloud",
-                            "Variti, Wallarm",
-                            "Golang, Bash, Jsonnet",
-                            "Terraform, Atlantis",
-                            "GitHub Actions",
-                            "Kubernetes, Docker",
+                            "Azure, Yandex&nbsp;Cloud, Variti, Wallarm",
+                            "Kubernetes, Golang, Bash, Jsonnet, Terraform",
+                            "GitHub&nbsp;Actions, Atlantis",
                             "Prometheus, Grafana, Kibana, Kusto",
                         ]}
                     />
