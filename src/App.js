@@ -60,7 +60,7 @@ function App() {
                                         description: "Whole team project, IaC redisign for infrastructure",
                                         data: [
                                             "Made a lot of pocs of IaC desing.",
-                                            "Implement official Hashicorp Terraform way to automation - json.",
+                                            "Implemented official Hashicorp Terraform way to automation - json.",
                                             "Made *tf.json building with Jsonnet.",
                                             "Desingned IaC with Atlantis support.",
                                             "Made IaC applying to infrastructure with Atlantis.",
