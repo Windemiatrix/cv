@@ -20,27 +20,26 @@ function App() {
                         title={"Summary"}
                         description={
                             [
-                                "Professional with experience in *nix servers and Network, administration, DevOps practices and troubleshooting. I have working experience with cloud platforms such as Azure, VmWare, GCP, AWS, Yandex Cloud.",
-                                "Seeking for the next career step in DevOps practices and company interested in implementing projects that will help optimize business processes and increase profits. I would also like to learn and help others develop professionally."
+                                "Professional with experience in SRE and DevOps practices. I have working experience with Azure and Yandex Cloud cloud platforms, writing infrastructure automations with Golang programming language, orkestrating services with Kubernetes, communicating on incidents, writing postmortems, working with SL, observability and so on.",
+                                "Seeking for the next career step in SRE and DevOps practices and company interested in implementing projects that will help optimize business processes and increase profits. I would also like to learn and help others develop professionally."
                             ]
                         }
                     />
                 </Col>
                 <Col xs={4}>
                     <BlockContacts
-                        placement={"Vladimir, Russia"}
-                        phone={"+7 (904) 037-37-36"}
+                        placement={"Kazakhstan, Almaty"}
+                        phone={"+7 (777) 503-73-76"}
                         email={"r.martsev@gmail.com"}
                         telegram={"Windemiatrix"}
                     />
                     <BlockSkills
                         title={"Skills"}
                         content={[
-                            "Bash, C#, Go",
-                            "Azure, AWS, GCP, Yandex Cloud, VmWare",
-                            "Packer, Terraform, Ansible",
-                            "Kubernetes, Docker",
-                            "Zabbix, ELK, Prometheus",
+                            "Azure, Yandex\u00A0Cloud, Variti, Wallarm",
+                            "Kubernetes, Golang, Bash, Jsonnet, Terraform",
+                            "GitHub\u00A0Actions, Atlantis",
+                            "Prometheus, Grafana, Kibana, Kusto",
                         ]}
                     />
                 </Col>
@@ -53,20 +52,47 @@ function App() {
                             {
                                 company: "Dodo Engineering LLC, Syktyvkar, Russia – Site Reliability Engineer",
                                 dates: "June 2021 – PRESENT",
-                                description: "IT product for business: pizza, coffee, shawarma",
+                                description: "IT product for business: pizza, coffee, shawarma, restourant menu automation",
                                 projectsTitle: "Projects in Dodo Engineering",
                                 projectsContent: [
                                     {
-                                        title: "Import SSL certificates from Azure to Variti",
+                                        title: "Automation IaC on Terraform with jsonnet",
+                                        description: "Whole team project, IaC redisign for infrastructure",
+                                        data: [
+                                            "Made a lot of pocs of IaC desing.",
+                                            "Implemented official Hashicorp Terraform way to automation - json.",
+                                            "Made *tf.json building with Jsonnet.",
+                                            "Desingned IaC with Atlantis support.",
+                                            "Made IaC applying to infrastructure with Atlantis.",
+                                        ],
+                                        techStack: "Terraform, Atlantis, GitHub Actions, Azure",
+                                    },
+                                    {
+                                        title: "Security services monitoring",
+                                        description: "Exporting metrics from Variti, Wallarm, Azure Front Door during PCI DSS project",
+                                        data: [
+                                            "Wrote golang service that is doing all work.",
+                                            "Made metrics in prometheus format.",
+                                            "Read metrics throw API for Variti and Wallarm and throw golang dev modules for AFD.",
+                                            "Integrated metrics with prometheus.",
+                                            "Made graphics in Grafana.",
+                                            "Made service configuration with configmap in json format.",
+                                            "Integrated logging with current logging system.",
+                                            "Alerting was integrated automatically.",
+                                        ],
+                                        techStack: "Golang, GitHub Actions, Kubernetes, Azure, Variti, Wallarm, Prometheus, Grafana",
+                                    },
+                                    {
+                                        title: "Automation SSL certificates deploying from Azure to Variti",
                                         description: "Exporting SSL certificate from Azure Key Vault and import to L4/L7 security service. That decision allows us don't matter about actuality of certificates on production endpoints",
                                         data: [
                                             "Wrote golang service that is doing all work.",
-                                            "Integrated service configuration with Azure Key Vault Secret.",
+                                            "Made service configuration with configmap in json format.",
                                             "Integrated logging with current logging system.",
                                             "Configured environment with cronjob of this service.",
                                             "Alerting was integrated automatically.",
                                         ],
-                                        techStack: "Golang, GitHub Actions, Kubernetes, JsonNET, Azure",
+                                        techStack: "Golang, GitHub Actions, Kubernetes, Azure",
                                     },
                                     {
                                         title: "Securing connections to development and production environments",
@@ -77,7 +103,7 @@ function App() {
                                             "Prepared RFC after testing.",
                                             "Implemented selected decision to infrastructure.",
                                         ],
-                                        techStack: "Terraform",
+                                        techStack: "Terraform, Azure VPN",
                                     },
                                     {
                                         title: "SSL certificates monitoring",
@@ -177,6 +203,24 @@ function App() {
                                 ],
                             },
                             {
+                                company: "MIR LLC, Vladimir, Russia – Developer",
+                                dates: "December 2018 – November 2019",
+                                description: "Recycling of secondary raw materials",
+                                projectsTitle: "Projects in MIR",
+                                projectsContent: [
+                                    {
+                                        title: "Business process automation",
+                                        description: "Application for interacting with counterparties for orders, sales and settlements; accounting for recycled material.",
+                                        data: [
+                                            "Designed and developed MySQL database.",
+                                            "Implemented RESTful API.",
+                                            "Implement, designed and developed desktop application on c# with Catel framework.",
+                                        ],
+                                        techStack: "MySQL, REST, C#, MVVM, Catel",
+                                    },
+                                ],
+                            },
+                            {
                                 company: "ORES-Vladimirskaya oblast JSC, Vladimir, Russia – Network Engineer",
                                 dates: "April 2015 – July 2019",
                                 description: "Services for the transmission of electricity, maintenance of electrical networks, services for dispatch control and operational switching in subordinate electrical networks",
@@ -201,24 +245,6 @@ function App() {
                                             "Optimized resource utilization through schedules and backup levels.",
                                         ],
                                         techStack: "Bareos.",
-                                    },
-                                ],
-                            },
-                            {
-                                company: "MIR LLC, Vladimir, Russia – Developer",
-                                dates: "December 2018 – November 2019",
-                                description: "Recycling of secondary raw materials",
-                                projectsTitle: "Projects in MIR",
-                                projectsContent: [
-                                    {
-                                        title: "Business process automation",
-                                        description: "Application for interacting with counterparties for orders, sales and settlements; accounting for recycled material.",
-                                        data: [
-                                            "Designed and developed MySQL database.",
-                                            "Implemented RESTful API.",
-                                            "Implement, designed and developed desktop application on c# with Catel framework.",
-                                        ],
-                                        techStack: "MySQL, REST, C#, MVVM, Catel",
                                     },
                                 ],
                             },
