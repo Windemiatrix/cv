@@ -20,8 +20,8 @@ function App() {
                         title={"Summary"}
                         description={
                             [
-                                "Professional with experience in *nix servers and Network, administration, DevOps practices and troubleshooting. I have working experience with cloud platforms such as Azure, VmWare, GCP, AWS, Yandex Cloud.",
-                                "Seeking for the next career step in DevOps practices and company interested in implementing projects that will help optimize business processes and increase profits. I would also like to learn and help others develop professionally."
+                                "Professional with experience in SRE and DevOps practices. I have working experience with Azure and Yandex Cloud cloud platforms, writing infrastructure automations with Golang programming language, orkestrating services with Kubernetes, communicating on incidents, writing postmortems, working with SL, observability and so on.",
+                                "Seeking for the next career step in SRE and DevOps practices and company interested in implementing projects that will help optimize business processes and increase profits. I would also like to learn and help others develop professionally."
                             ]
                         }
                     />
