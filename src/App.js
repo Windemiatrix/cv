@@ -28,19 +28,21 @@ function App() {
                 </Col>
                 <Col xs={4}>
                     <BlockContacts
-                        placement={"Vladimir, Russia"}
-                        phone={"+7 (904) 037-37-36"}
+                        placement={"Kazakhstan, Almaty"}
+                        phone={"+7 (777) 503-73-76"}
                         email={"r.martsev@gmail.com"}
                         telegram={"Windemiatrix"}
                     />
                     <BlockSkills
                         title={"Skills"}
                         content={[
-                            "Bash, C#, Go",
-                            "Azure, AWS, GCP, Yandex Cloud, VmWare",
-                            "Packer, Terraform, Ansible",
+                            "Azure, Yandex Cloud",
+                            "Variti, Wallarm",
+                            "Golang, Bash, Jsonnet",
+                            "Terraform, Atlantis",
+                            "GitHub Actions",
                             "Kubernetes, Docker",
-                            "Zabbix, ELK, Prometheus",
+                            "Prometheus, Grafana, Kibana, Kusto",
                         ]}
                     />
                 </Col>
@@ -57,16 +59,43 @@ function App() {
                                 projectsTitle: "Projects in Dodo Engineering",
                                 projectsContent: [
                                     {
+                                        title: "Automation IaC on Terraform with jsonnet",
+                                        description: "Whole team project, IaC redisign for infrastructure",
+                                        data: [
+                                            "Made a lot of pocs of IaC desing.",
+                                            "Implement official Hashicorp Terraform way to automation - json.",
+                                            "Made *tf.json building with Jsonnet.",
+                                            "Desingned IaC with Atlantis support.",
+                                            "Made IaC applying to infrastructure with Atlantis.",
+                                        ],
+                                        techStack: "Terraform, Atlantis, GitHub Actions, Azure",
+                                    },
+                                    {
+                                        title: "Export metrics from security services",
+                                        description: "Exporting attack and total traffic metrics from Variti, Wallarm, Azure Front Door for PCI DSS project",
+                                        data: [
+                                            "Wrote golang service that is doing all work.",
+                                            "Made metrics in prometheus format.",
+                                            "Read metrics throw API for Variti and Wallarm and throw golang dev modules for AFD.",
+                                            "Integrated metrics with prometheus.",
+                                            "Made graphics in Grafana.",
+                                            "Made service configuration with configmap in json format.",
+                                            "Integrated logging with current logging system.",
+                                            "Alerting was integrated automatically.",
+                                        ],
+                                        techStack: "Golang, GitHub Actions, Kubernetes, Azure, Variti, Wallarm",
+                                    },
+                                    {
                                         title: "Import SSL certificates from Azure to Variti",
                                         description: "Exporting SSL certificate from Azure Key Vault and import to L4/L7 security service. That decision allows us don't matter about actuality of certificates on production endpoints",
                                         data: [
                                             "Wrote golang service that is doing all work.",
-                                            "Integrated service configuration with Azure Key Vault Secret.",
+                                            "Made service configuration with configmap in json format.",
                                             "Integrated logging with current logging system.",
                                             "Configured environment with cronjob of this service.",
                                             "Alerting was integrated automatically.",
                                         ],
-                                        techStack: "Golang, GitHub Actions, Kubernetes, JsonNET, Azure",
+                                        techStack: "Golang, GitHub Actions, Kubernetes, Azure",
                                     },
                                     {
                                         title: "Securing connections to development and production environments",
