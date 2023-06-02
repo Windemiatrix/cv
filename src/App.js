@@ -203,6 +203,24 @@ function App() {
                                 ],
                             },
                             {
+                                company: "MIR LLC, Vladimir, Russia – Developer",
+                                dates: "December 2018 – November 2019",
+                                description: "Recycling of secondary raw materials",
+                                projectsTitle: "Projects in MIR",
+                                projectsContent: [
+                                    {
+                                        title: "Business process automation",
+                                        description: "Application for interacting with counterparties for orders, sales and settlements; accounting for recycled material.",
+                                        data: [
+                                            "Designed and developed MySQL database.",
+                                            "Implemented RESTful API.",
+                                            "Implement, designed and developed desktop application on c# with Catel framework.",
+                                        ],
+                                        techStack: "MySQL, REST, C#, MVVM, Catel",
+                                    },
+                                ],
+                            },
+                            {
                                 company: "ORES-Vladimirskaya oblast JSC, Vladimir, Russia – Network Engineer",
                                 dates: "April 2015 – July 2019",
                                 description: "Services for the transmission of electricity, maintenance of electrical networks, services for dispatch control and operational switching in subordinate electrical networks",
@@ -227,24 +245,6 @@ function App() {
                                             "Optimized resource utilization through schedules and backup levels.",
                                         ],
                                         techStack: "Bareos.",
-                                    },
-                                ],
-                            },
-                            {
-                                company: "MIR LLC, Vladimir, Russia – Developer",
-                                dates: "December 2018 – November 2019",
-                                description: "Recycling of secondary raw materials",
-                                projectsTitle: "Projects in MIR",
-                                projectsContent: [
-                                    {
-                                        title: "Business process automation",
-                                        description: "Application for interacting with counterparties for orders, sales and settlements; accounting for recycled material.",
-                                        data: [
-                                            "Designed and developed MySQL database.",
-                                            "Implemented RESTful API.",
-                                            "Implement, designed and developed desktop application on c# with Catel framework.",
-                                        ],
-                                        techStack: "MySQL, REST, C#, MVVM, Catel",
                                     },
                                 ],
                             },
