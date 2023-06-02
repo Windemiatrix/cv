@@ -80,7 +80,7 @@ function App() {
                                             "Integrated logging with current logging system.",
                                             "Alerting was integrated automatically.",
                                         ],
-                                        techStack: "Golang, GitHub Actions, Kubernetes, Azure, Variti, Wallarm",
+                                        techStack: "Golang, GitHub Actions, Kubernetes, Azure, Variti, Wallarm, Prometheus, Grafana",
                                     },
                                     {
                                         title: "Automation SSL certificates deploying from Azure to Variti",
