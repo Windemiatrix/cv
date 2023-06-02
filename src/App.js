@@ -52,7 +52,7 @@ function App() {
                             {
                                 company: "Dodo Engineering LLC, Syktyvkar, Russia – Site Reliability Engineer",
                                 dates: "June 2021 – PRESENT",
-                                description: "IT product for business: pizza, coffee, shawarma",
+                                description: "IT product for business: pizza, coffee, shawarma, restourant menu automation",
                                 projectsTitle: "Projects in Dodo Engineering",
                                 projectsContent: [
                                     {
@@ -68,8 +68,8 @@ function App() {
                                         techStack: "Terraform, Atlantis, GitHub Actions, Azure",
                                     },
                                     {
-                                        title: "Export metrics from security services",
-                                        description: "Exporting attack and total traffic metrics from Variti, Wallarm, Azure Front Door for PCI DSS project",
+                                        title: "Security services monitoring",
+                                        description: "Exporting metrics from Variti, Wallarm, Azure Front Door during PCI DSS project",
                                         data: [
                                             "Wrote golang service that is doing all work.",
                                             "Made metrics in prometheus format.",
@@ -83,7 +83,7 @@ function App() {
                                         techStack: "Golang, GitHub Actions, Kubernetes, Azure, Variti, Wallarm",
                                     },
                                     {
-                                        title: "Import SSL certificates from Azure to Variti",
+                                        title: "Automation SSL certificates deploying from Azure to Variti",
                                         description: "Exporting SSL certificate from Azure Key Vault and import to L4/L7 security service. That decision allows us don't matter about actuality of certificates on production endpoints",
                                         data: [
                                             "Wrote golang service that is doing all work.",
@@ -103,7 +103,7 @@ function App() {
                                             "Prepared RFC after testing.",
                                             "Implemented selected decision to infrastructure.",
                                         ],
-                                        techStack: "Terraform",
+                                        techStack: "Terraform, Azure VPN",
                                     },
                                     {
                                         title: "SSL certificates monitoring",
